@@ -12,7 +12,7 @@ module policy 'policy.bicep' = {
 
 module policyAssignment 'policy-assignment.bicep' = {
   scope: deployIfNotExistsDemo
-  name: 'policyAssignment-demo'
+  name: 'policy-deploylogalert-demo'
   params: {
     policyDefinitionID: policy.outputs.id
     policyAssignmentName: policy.outputs.name
